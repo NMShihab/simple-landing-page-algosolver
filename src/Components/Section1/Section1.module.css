@@ -1,0 +1,47 @@
+.section {
+  overflow-x: hidden;
+}
+.sectionContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.heading {
+  text-align: center;
+  padding: 20px;
+}
+.content {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.sectionHeading {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 778px) {
+  .sectionContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionContainer img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sectionHeading {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+    padding-bottom: 5px !important;
+  }
+  .content {
+    padding-top: 5px !important;
+  }
+}

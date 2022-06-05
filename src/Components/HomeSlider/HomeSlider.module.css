@@ -1,0 +1,24 @@
+.homeSlide {
+  overflow: hidden;
+}
+
+.homeSlide img {
+  width: 100%;
+  height: 425px;
+}
+
+@media only screen and (max-width: 778px) {
+  /*Small smartphones [325px -> 425px]*/
+  .homeSlide img {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .homeSlide img {
+    width: 100%;
+    height: 260px;
+  }
+}
