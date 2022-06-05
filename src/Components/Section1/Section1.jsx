@@ -1,30 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Card from "../Card/Card";
 import butterfyImage from "../../Images/butter-fly.jpg";
 import style from "./Section1.module.css";
-import WOW from "wowjs";
 
 const Section1 = () => {
-  useEffect(() => {
-    new WOW.WOW({
-      live: false,
-    }).init();
-  }, []);
-
   return (
     <div className={style.section}>
-      <h2 className={style.sectionHeading}>SECTION</h2>
+      <h2 className={`animate__fadeInLeft ${style.sectionHeading}`}>SECTION</h2>
 
       <div className={style.sectionContainer}>
-        <div
-          className="wow slideInLeft"
-          data-wow-duration="2s"
-          data-wow-delay="5s"
-        >
-          <Card className={style.card}>
-            <img src={butterfyImage} alt="butterfly" />
-          </Card>
-        </div>
+        <Card className={style.card}>
+          <img src={butterfyImage} alt="butterfly" />
+        </Card>
 
         <Card>
           <h1 className={style.heading}>This is Heading</h1>
